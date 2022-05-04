@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+          
 .container {
     width:80%;
     margin:0 auto;
@@ -30,6 +31,98 @@
     }
 }
 
+.strangerPopup {
+    display: none;
+    position:absolute;
+    z-index:1000;
+    background: white;
+    border:2px solid black;
+    border-radius:10px;
+    font-family: "roboto";
+    font-weight:100;
+    left:50%;
+    top:50%;
+    margin-left: -347px;
+    margin-top: -177.5px;
+    &__inner {
+        padding: 30px;
+      form {
+          display: flex;
+          flex-direction: column;
+        input {
+            font-family: "roboto";
+            font-weight:100;
+            margin-bottom: 20px;
+            font-size:25px;
+            &:last-child {
+                cursor: pointer;
+            }
+        }
+        textarea {
+            font-family: "roboto";
+            font-weight:100;
+            resize:none;
+            margin-bottom: 20px;
+            font-size:25px;
+        }
+      }
+      &-close {
+          margin-bottom: 20px;
+          display: flex;
+          justify-content: flex-end;
+          img {
+              cursor: pointer;
+          }
+      }
+    }
+}
+
+.friendPopup {
+    display: none;
+    position:absolute;
+    z-index:1000;
+    background: white;
+    font-family: "roboto";
+    font-weight:100;
+    left:50%;
+    top:50%;
+    margin-left: -347px;
+    margin-top: -233px;
+    border:2px solid black;
+    border-radius:10px;
+    &__inner {
+        padding: 30px;
+      form {
+          display: flex;
+          flex-direction: column;
+        input {
+            font-family: "roboto";
+            font-weight:100;
+            margin-bottom: 20px;
+            font-size:25px;
+            &:last-child {
+                cursor: pointer;
+            }
+        }
+        textarea {
+            font-family: "roboto";
+            font-weight:100;
+            resize:none;
+            margin-bottom: 20px;
+            font-size:25px;
+        }
+      }
+      &-close {
+          margin-bottom: 20px;
+          display: flex;
+          justify-content: flex-end;
+          img {
+              cursor: pointer;
+          }
+      }
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .container {
         width:90%;
@@ -50,5 +143,29 @@
                 }
             }
         }
+    }
+
+    .friendPopup {
+        width:100%;
+        margin-left:0px;
+        margin-top: 0px;
+        top:0;
+        left:0;
+        background:white;
+        height:100%;
+        border:none;
+        border-radius: none;
+    }
+
+    .strangerPopup {
+        width:100%;
+        margin-left:0px;
+        margin-top: 0px;
+        top:0;
+        left:0;
+        background:white;
+        height:100%;
+        border:none;
+        border-radius: none;
     }
 }

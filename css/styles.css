@@ -37,6 +37,130 @@
   margin-right: 50px;
 }
 
+.strangerPopup {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  background: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-family: "roboto";
+  font-weight: 100;
+  left: 50%;
+  top: 50%;
+  margin-left: -347px;
+  margin-top: -177.5px;
+}
+
+.strangerPopup__inner {
+  padding: 30px;
+}
+
+.strangerPopup__inner form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.strangerPopup__inner form input {
+  font-family: "roboto";
+  font-weight: 100;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.strangerPopup__inner form input:last-child {
+  cursor: pointer;
+}
+
+.strangerPopup__inner form textarea {
+  font-family: "roboto";
+  font-weight: 100;
+  resize: none;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.strangerPopup__inner-close {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.strangerPopup__inner-close img {
+  cursor: pointer;
+}
+
+.friendPopup {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  background: white;
+  font-family: "roboto";
+  font-weight: 100;
+  left: 50%;
+  top: 50%;
+  margin-left: -347px;
+  margin-top: -233px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.friendPopup__inner {
+  padding: 30px;
+}
+
+.friendPopup__inner form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.friendPopup__inner form input {
+  font-family: "roboto";
+  font-weight: 100;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.friendPopup__inner form input:last-child {
+  cursor: pointer;
+}
+
+.friendPopup__inner form textarea {
+  font-family: "roboto";
+  font-weight: 100;
+  resize: none;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.friendPopup__inner-close {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.friendPopup__inner-close img {
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 768px) {
   .container {
     width: 90%;
@@ -59,6 +183,28 @@
   .main__inner button:first-child {
     margin-right: 0px;
     margin-bottom: 100px;
+  }
+  .friendPopup {
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 0px;
+    top: 0;
+    left: 0;
+    background: white;
+    height: 100%;
+    border: none;
+    border-radius: none;
+  }
+  .strangerPopup {
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 0px;
+    top: 0;
+    left: 0;
+    background: white;
+    height: 100%;
+    border: none;
+    border-radius: none;
   }
 }
 /*# sourceMappingURL=styles.css.map */
