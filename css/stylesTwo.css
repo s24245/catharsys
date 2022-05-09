@@ -144,6 +144,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 20px;
+  padding-top: 15px;
   padding-right: 20px;
   border-radius: 3px;
 }
@@ -192,6 +193,18 @@ body {
     display: block;
   }
   .messages__inner-data {
+    display: none;
+  }
+  .messages__inner-blocks {
+    margin-right: 0px;
+  }
+  .messages__inner-blocks-block-user {
+    display: none;
+  }
+  .messages__inner-blocks-block-text {
+    font-size: 10px;
+  }
+  .messages__inner-blocks-block h1:nth-child(3) {
     display: none;
   }
 }
