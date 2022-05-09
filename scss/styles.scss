@@ -9,23 +9,68 @@
 }
 
 .main {
-    padding-top: 20%;
+    padding-top: 15%;
+    font-family: "roboto";
+    font-weight:100;
     &__inner {
         display: flex;
         justify-content: center;
-        
-        button {
-            font-family: "roboto";
-            font-weight:100;
-            outline:none;
-            cursor:pointer;
-            border:none;
-            background:#a881af;
-            width:200px;
-            height:50px;
-            &:first-child {
-                background:#5dbea3;
-                margin-right: 50px;
+        flex-direction: column;
+        align-items: center;
+        &-buttons {
+            display: flex;
+            justify-content: center;
+            // flex-direction: column;
+            align-items: center;
+
+            button {
+                font-family: "roboto";
+                font-weight:100;
+                outline:none;
+                cursor:pointer;
+                border:none;
+                background:white;
+                width:200px;
+                height:50px;
+                border:1px solid black;
+    
+                &:hover {
+                    background:black;
+                    transition:0.7s;
+                    color:white;
+                }
+                &:first-child {
+                    // background:#5dbea3;
+                    margin-right: 50px;
+                }
+            }
+
+        }
+        &-text {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+
+            &-top {
+                margin-bottom: 0px;
+                font-weight:700;
+                font-size:25px;
+                position:relative;
+
+                &::after {
+                    content:"";
+                    position:absolute;
+                    height:2px;
+                    width:100%;
+                    background:black;
+                    bottom:-5px;
+                    left:0;
+                }
+            }
+            &-bottom {
+                margin-bottom: 20px;
+                width:500px;
             }
         }
     }
@@ -141,6 +186,9 @@
                     margin-bottom: 100px;
                 
                 }
+            }
+            &-buttons {
+                flex-direction: column;
             }
         }
     }
