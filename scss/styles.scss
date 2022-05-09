@@ -180,12 +180,15 @@
                 font-size:25px;
                 &:first-child {
                     margin-right: 0px;
-                    margin-bottom: 100px;
+                    margin-bottom: 50px;
                 
                 }
             }
             &-buttons {
                 flex-direction: column;
+            }
+            &-text {
+                margin-bottom: 50px;
             }
         }
     }

@@ -236,13 +236,16 @@
   }
   .main__inner button:first-child {
     margin-right: 0px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
   .main__inner-buttons {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .main__inner-text {
+    margin-bottom: 50px;
   }
   .friendPopup {
     width: 100%;
