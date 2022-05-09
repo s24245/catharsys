@@ -198,11 +198,14 @@ body {
   .messages__inner-blocks {
     margin-right: 0px;
   }
+}
+
+@media only screen and (max-width: 768px) {
   .messages__inner-blocks-block-user {
     display: none;
   }
   .messages__inner-blocks-block-text {
-    font-size: 10px;
+    font-size: 15px;
   }
   .messages__inner-blocks-block h1:nth-child(3) {
     display: none;
