@@ -214,8 +214,5 @@ body {
     font-size: 15px;
     padding-right: 10px;
   }
-  .messages__inner-blocks-block h1:nth-child(3) {
-    display: none;
-  }
 }
 /*# sourceMappingURL=stylesTwo.css.map */
