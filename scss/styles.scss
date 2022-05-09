@@ -47,10 +47,7 @@
 
         }
         &-text {
-            display: flex;
-            flex-direction: column;
             text-align: center;
-            justify-content: center;
 
             &-top {
                 margin-bottom: 0px;
@@ -70,7 +67,7 @@
             }
             &-bottom {
                 margin-bottom: 20px;
-                width:500px;
+                max-width: 500px;
             }
         }
     }
