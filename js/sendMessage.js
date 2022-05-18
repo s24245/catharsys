@@ -8,14 +8,14 @@ const api = axios.create({
     baseURL: 'https://catharsys.staging.f4dev.me/'
 })
 
-console.log(api)
+// console.log(api)    
 
 
 submitStranger.addEventListener("click", (e)=> {
     e.preventDefault()
 
     api.post('/thoughts/', {
-        code: testNumStranger.value,
+        code: +testNumStranger.value,
         published: true,
         text: messageStranger.value
     })
