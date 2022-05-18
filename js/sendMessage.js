@@ -24,9 +24,12 @@ submitStranger.addEventListener("click", (e)=> {
                 const thought = response.data.data
     
                 console.log(`Thought with text "${thought.text}" created successfully`)
+
+                location.replace("messages.html")
             }
         })
         .catch((error) => {
             console.error(error)
         })
+
 })
