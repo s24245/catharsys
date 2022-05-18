@@ -44,6 +44,7 @@ let allThoughtsArr = api.get('/thoughts/')
             let messageReactionsHeart = document.createElement("div")
             messageReactionsHeart.classList.add("messages__inner-blocks-block-reactions-heart")
             let messageReactionsHeartH = document.createElement("h1")
+            messageReactionsHeartH.innerHTML = 0;
             messageReactionsHeartH.classList.add("messages__inner-blocks-block-reactions-heart-counter")
             let messageReactionsHeartImg = document.createElement("img")
             messageReactionsHeartImg.src = "img/heart.png"
@@ -51,6 +52,7 @@ let allThoughtsArr = api.get('/thoughts/')
             let messageReactionsLike = document.createElement("div")
             messageReactionsLike.classList.add("messages__inner-blocks-block-reactions-like")
             let messageReactionsLikeH = document.createElement("h1")
+            messageReactionsLikeH.innerHTML = 0;
             messageReactionsLikeH.classList.add("messages__inner-blocks-block-reactions-like-counter")
             let messageReactionsLikeImg = document.createElement("img")
             messageReactionsLikeImg.src = "img/like.png"
