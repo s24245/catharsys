@@ -2,6 +2,7 @@ let messageStranger = document.querySelector("#messageStranger")
 let submitStranger = document.querySelector("#submitStranger")
 let testNumStranger = document.querySelector("#testNumStranger")
 
+
 const api = axios.create({
     baseURL: 'https://catharsys.staging.f4dev.me/'
 })
@@ -9,11 +10,13 @@ const api = axios.create({
 console.log(api)
 
 
-submitStranger.addEventListener("click", ()=> {
+submitStranger.addEventListener("click", (e)=> {
+    e.preventDefault()
+    
     api.post('/thoughts/', {
-        code: 1,
-        published: false,
-        text: "I love my mom"
+        code: testNumStranger.value,
+        published: true,
+        text: messageStranger.value
     })
         .then((response) => {
             if(!response.data.error) {
