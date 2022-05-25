@@ -25,7 +25,7 @@ submitStranger.addEventListener("click", (e)=> {
     
                 console.log(`Thought with text "${thought.text}" created successfully`)
 
-                location.replace("messages.html")
+                location.replace("singleMessage.html")
             }
         })
         .catch((error) => {
