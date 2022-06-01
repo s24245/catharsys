@@ -9,31 +9,19 @@ let allThoughtsArr = api.get('/thoughts/')
     if(!response.data.error) {
         const thoughts = response.data.data // An array of thought objects
 
+        document.querySelector('.messages__inner-data-bottom-messages-counter').innerHTML = thoughts.length
+
         for(const thought of thoughts) {
-            // console.log(`Thought with text "${thought.text}"`)
-
-            let newArr = [];
-
-            for (let i = 0; i < thoughts.length; i++) {
-                newArr.push(thoughts[i])
-                // console.log(thoughts[i].text)
-
-
-            }
-            
-            console.log(thought.text)
-            
             let messagesInnerBlocks = document.querySelector(".messages__inner-blocks")
             let messagesInnerBlocksBlock = document.createElement("div")
             messagesInnerBlocksBlock.classList.add("messages__inner-blocks-block")
-            
+
             let messagesUser = document.createElement("div")
             messagesUser.classList.add("messages__inner-blocks-block-user")
             let messageText = document.createElement("div")
             messageText.classList.add("messages__inner-blocks-block-text")
             let messageReactions = document.createElement("div")
             messageReactions.classList.add("messages__inner-blocks-block-reactions")
-
 
             let messageUserImg = document.createElement("img")
             messageUserImg.src = "img/user.svg"
@@ -44,7 +32,7 @@ let allThoughtsArr = api.get('/thoughts/')
             let messageReactionsHeart = document.createElement("div")
             messageReactionsHeart.classList.add("messages__inner-blocks-block-reactions-heart")
             let messageReactionsHeartH = document.createElement("h1")
-            messageReactionsHeartH.innerHTML = 0;
+            messageReactionsHeartH.innerHTML = "0";
             messageReactionsHeartH.classList.add("messages__inner-blocks-block-reactions-heart-counter")
             let messageReactionsHeartImg = document.createElement("img")
             messageReactionsHeartImg.src = "img/heart.png"
@@ -52,14 +40,12 @@ let allThoughtsArr = api.get('/thoughts/')
             let messageReactionsLike = document.createElement("div")
             messageReactionsLike.classList.add("messages__inner-blocks-block-reactions-like")
             let messageReactionsLikeH = document.createElement("h1")
-            messageReactionsLikeH.innerHTML = 0;
+            messageReactionsLikeH.innerHTML = "0";
             messageReactionsLikeH.classList.add("messages__inner-blocks-block-reactions-like-counter")
             let messageReactionsLikeImg = document.createElement("img")
             messageReactionsLikeImg.src = "img/like.png"
-            
 
-
-            messagesInnerBlocks.appendChild(messagesInnerBlocksBlock)
+            messagesInnerBlocks.prepend(messagesInnerBlocksBlock)
             messagesInnerBlocksBlock.appendChild(messagesUser)
             messagesUser.appendChild(messageUserImg)
 
@@ -75,7 +61,6 @@ let allThoughtsArr = api.get('/thoughts/')
             messageReactions.appendChild(messageReactionsLike)
             messageReactionsLike.appendChild(messageReactionsLikeImg)
             messageReactionsLike.appendChild(messageReactionsLikeH)
-            
         }
     }
 })
