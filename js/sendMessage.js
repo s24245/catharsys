@@ -16,7 +16,7 @@ submitStranger.addEventListener("click", (e) => {
   })
      .then((response) => {
        if(!response.data.error) {
-         location.replace("messages.html");
+         location.replace("singleMessage.html");
        }
      })
      .catch((error) => {

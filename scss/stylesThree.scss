@@ -1,3 +1,5 @@
+
+
 * {
     box-sizing: border-box;
   }
@@ -15,14 +17,14 @@
   }
   
   .header {
-    background:#00a2db;
+    background:#15539B;
     &__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-bottom: 30px;
+        padding-top:25px;
         h1 {
-            padding-bottom: 30px;
-            padding-top:30px;
             font-weight:700;
             color:white;
             font-size:20px;
@@ -100,7 +102,7 @@
             button {
                 outline:none;
                 cursor: pointer;
-                border:2px solid #00a2db;
+                border:2px solid #15539B;
                 font-family:"roboto";
                 font-weight:100;
                 width:200px;
@@ -109,8 +111,9 @@
                 transition:0.3s;
                 font-size:17px;
                 &:hover {
-                    background:#00a2db;
+                    background:#15539B;
                     border:2px solid white;
+                    color:white;
                 }
             }
             margin-bottom: 20px;
@@ -118,7 +121,7 @@
   
   
         &-data {
-            background:#00a2db;
+            background:#15539B;
             color:white;
             font-weight:100;
             text-align: center;

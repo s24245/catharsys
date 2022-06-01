@@ -43,21 +43,22 @@
 }
 
 .main__inner-buttons button {
-  font-family: "roboto";
-  font-weight: 100;
   outline: none;
   cursor: pointer;
-  border: none;
-  background: white;
+  border: 2px solid black;
+  font-family: "roboto";
+  font-weight: 100;
   width: 200px;
   height: 50px;
-  border: 1px solid black;
+  background: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 14px;
 }
 
 .main__inner-buttons button:hover {
   background: black;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
+  border: 2px solid white;
   color: white;
 }
 

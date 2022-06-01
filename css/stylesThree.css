@@ -14,7 +14,7 @@ body {
 }
 
 .header {
-  background: #00a2db;
+  background: #15539B;
 }
 
 .header__inner {
@@ -27,11 +27,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 30px;
+  padding-top: 25px;
 }
 
 .header__inner h1 {
-  padding-bottom: 30px;
-  padding-top: 30px;
   font-weight: 700;
   color: white;
   font-size: 20px;
@@ -138,7 +138,7 @@ body {
 .messages__inner-btn button {
   outline: none;
   cursor: pointer;
-  border: 2px solid #00a2db;
+  border: 2px solid #15539B;
   font-family: "roboto";
   font-weight: 100;
   width: 200px;
@@ -150,12 +150,13 @@ body {
 }
 
 .messages__inner-btn button:hover {
-  background: #00a2db;
+  background: #15539B;
   border: 2px solid white;
+  color: white;
 }
 
 .messages__inner-data {
-  background: #00a2db;
+  background: #15539B;
   color: white;
   font-weight: 100;
   text-align: center;
