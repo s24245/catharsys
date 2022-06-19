@@ -16,7 +16,7 @@ submitStranger.addEventListener("click", (e) => {
   })
      .then((response) => {
        if(!response.data.error) {
-         location.replace("messages.html");
+         location.replace("singleMessage.html");
        }
      })
      .catch((error) => {
@@ -29,7 +29,7 @@ function validateCode() {
   const hash     = new URLSearchParams(location.hash.substring(1)),
         code     = hash.get("code"),
         redirect = () => {
-          location.replace("messages.html"); // TODO: replace to the page with random entries + some message
+          location.replace("singleMessage.html"); // TODO: replace to the page with random entries + some message
         };
 
   if(!code) {

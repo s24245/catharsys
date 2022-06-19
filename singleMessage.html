@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/stylesThree.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <!-- <h1>CATHARSYS</h1> -->
+                <img src="img/logo.svg" alt="" class="">
+            </div>
+        </div>
+    </header>
+    
+    <section class="messages">
+        <div class="container">
+            <div class="messages__inner">
+                <div class="messages__inner-blocks">
+                    
+                </div>
+
+                <div class="messages__inner-btn">
+                    <button id ="nextMessage">Next Thought</button>
+                </div>
+
+                <div class="messages__inner-data">
+                    <div class="messages__inner-data-top">
+                        <h1>catharsys numbers</h1>
+                    </div>
+                    <div class="messages__inner-data-bottom">
+                        <div class="messages__inner-data-bottom-messages">
+                            <img src="img/message.svg" alt="">
+                            <h1>Messages shared</h1>
+                            <h1 class="messages__inner-data-bottom-messages-counter">0</h1>
+                        </div>
+                        <div class="messages__inner-data-bottom-bars">
+                            <img src="img/bar.svg" alt="">
+                            <h1>Catharsys bought</h1>
+                            <h1 class="messages__inner-data-bottom-bars-counter">0</h1>
+                        </div>
+                        <div class="messages__inner-data-bottom-shared">
+                            <img src="img/sharing.svg" alt="">
+                            <h1>Catharsys shared</h1>
+                            <h1 class="messages__inner-data-bottom-shared-counter">0</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/counters.js"></script>
+    <script src="js/heartLike.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- <script src="js/getMessage.js"></script> -->
+    <script src="js/getRandomThought.js"></script>
+    <script src="js/nextThought.js"></script>
+</body>
+</html>
