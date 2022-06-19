@@ -62,10 +62,6 @@
   color: white;
 }
 
-.main__inner-buttons button:first-child {
-  margin-right: 50px;
-}
-
 .main__inner-text {
   text-align: center;
 }
@@ -234,10 +230,6 @@
     width: 90%;
     height: 100px;
     font-size: 25px;
-  }
-  .main__inner button:first-child {
-    margin-right: 0px;
-    margin-bottom: 50px;
   }
   .main__inner-buttons {
     -webkit-box-orient: vertical;
